@@ -1,12 +1,14 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+const BASE_URL = "https://movie-backend-sepia.vercel.app/"
+
 
 // const Card = ({runtime,image,title,hero,heroine}) => {
 const Card = ({ name, hero, heroine, thumbnail}) => {
   return (
         <>
         <div className="card me-3 mb-3" style={{width: '18rem', backgroundColor:'black', color:'white', border:'1px solid gray'}}>
-          <Link to={`/movie/${name}`}>
+          <Link to={`${BASE_URL}/movie/${name}`}>
             <img src={`/${thumbnail}`} className="card-img-top" style={{width:'287px',height:'250px'}} alt={`${name}'s thumbnail`}/>
             </Link>
             <div className="card-body">

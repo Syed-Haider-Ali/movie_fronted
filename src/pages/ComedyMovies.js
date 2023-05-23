@@ -18,7 +18,7 @@ const ActionMovies = () => {
 
       const getResults = async () => {
         try {
-            const res = await axios.get(`${BASE_URL}movies/comedy`);
+            const res = await axios.get(`${BASE_URL}/movies/comedy`);
             setResults(res.data);
         } catch (err) {
             console.log(`error occred.. in ActionMovies.. ${err}`);

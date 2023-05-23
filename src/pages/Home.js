@@ -3,6 +3,8 @@ import axios from 'axios'
 // import './CSS/index.css
 import BackgroundImage from '../components/BackgroundImage'
 import CardSlider from '../components/CardSlider'
+const BASE_URL = "https://movie-backend-sepia.vercel.app/"
+
 // import Dropdown from '../components/Dropdown'
 
   // const data= [
@@ -50,9 +52,9 @@ const Home = () => {
     const fetch = async ()=>{
       try{
         // const res = await axios.get(`http://localhost:5000/movies`);
-        const resDrama = await axios.get("/movies/drama");
-        const resAction = await axios.get("/movies/action");
-        const resComedy = await axios.get("/movies/comedy");
+        const resDrama = await axios.get(`${BASE_URL}/movies/drama`);
+        const resAction = await axios.get(`${BASE_URL}/movies/action`);
+        const resComedy = await axios.get(`${BASE_URL}/movies/comedy`);
 
         // setResults(res.data)
         setAction(resAction.data)

@@ -14,7 +14,7 @@ const DramaMovies = () => {
 
       const getResults = async () => {
         try {
-            const res = await axios.get(`${BASE_URL}movies/drama`);
+            const res = await axios.get(`${BASE_URL}/movies/drama`);
             if(!res){
                 setResults('')
             }
@@ -36,7 +36,6 @@ const DramaMovies = () => {
           </>
         )
       })
-      console.log(results.thumbnail)
 
 if(results == ''){
     return(
