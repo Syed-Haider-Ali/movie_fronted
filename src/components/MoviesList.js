@@ -3,7 +3,6 @@ import { useDispatch, useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 // import { createMovie } from '../features/movies/movieSlice'
 
-import Spinner from '../components/Spinner'
 
 const MoviesList = () => {
     

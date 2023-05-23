@@ -3,7 +3,6 @@ import {useParams} from 'react-router-dom'
 import axios from 'axios'
 
 import VideoCards from './VideoCards'
-import VideoMapping from './VideoMapping'
 const BASE_URL = "https://movie-backend-sepia.vercel.app/"
 
 
