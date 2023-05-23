@@ -39,7 +39,7 @@ const MovieDetails = () => {
              <div className='col-lg-8'>
 
     {/* video player  */}
-                <div className='col-lg-10 mt-3 mb-5' key={`/movie/video/${title}`}>
+                <div className='col-lg-10 mt-3 mb-5' key={`${BASE_URL}movie/video/${title}`}>
                   <video width='800' height='500' muted controls autoPlay>
                     <source src={`/movie/video/${title}`} style={{backgroundColor: 'gray'}} type='video/mp4'></source>
                     Your browser does not support the video tag.
