@@ -52,9 +52,9 @@ const Home = () => {
     const fetch = async ()=>{
       try{
         // const res = await axios.get(`http://localhost:5000/movies`);
-        const resDrama = await axios.get(`${BASE_URL}/movies/drama`);
-        const resAction = await axios.get(`${BASE_URL}/movies/action`);
-        const resComedy = await axios.get(`${BASE_URL}/movies/comedy`);
+        const resDrama = await axios.get(`${BASE_URL}movies/drama`);
+        const resAction = await axios.get(`${BASE_URL}movies/action`);
+        const resComedy = await axios.get(`${BASE_URL}movies/comedy`);
 
         // setResults(res.data)
         setAction(resAction.data)
