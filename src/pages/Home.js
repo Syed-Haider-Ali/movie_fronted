@@ -5,7 +5,7 @@ import ReactGa from 'react-ga'
 import BackgroundImage from '../components/BackgroundImage'
 import CardSlider from '../components/CardSlider'
 const BASE_URL = "https://movie-backend-sepia.vercel.app/"
-const trackingId = "G-7TW03ESDN6"
+const trackingId = "377849567"
 
 ReactGa.initialize(trackingId)
 // import Dropdown from '../components/Dropdown'
