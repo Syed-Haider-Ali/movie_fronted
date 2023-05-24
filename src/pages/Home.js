@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
+import ReactGa from 'react-ga'
 // import './CSS/index.css
 import BackgroundImage from '../components/BackgroundImage'
 import CardSlider from '../components/CardSlider'
 const BASE_URL = "https://movie-backend-sepia.vercel.app/"
+const trackingId = "G-7TW03ESDN6"
 
+ReactGa.initialize(trackingId)
 // import Dropdown from '../components/Dropdown'
 
   // const data= [
@@ -56,6 +59,7 @@ const Home = () => {
         const resAction = await axios.get(`${BASE_URL}movies/action`);
         const resComedy = await axios.get(`${BASE_URL}movies/comedy`);
 
+        ReactGa.pageview(window.location.pathname)
         // setResults(res.data)
         setAction(resAction.data)
         setComedy(resComedy.data)
